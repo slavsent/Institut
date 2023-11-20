@@ -1,0 +1,38 @@
+[
+    {
+      "model": "mainapp.courses",
+      "pk": "0e36d72d-e364-4c74-af84-e7b017abcdfa",
+      "fields": {
+        "name": "Economy",
+        "number": 1,
+        "student": ["0e36d72d-e364-4c74-af84-e7b017abcdfa", "5718290c-c5fa-42d4-b945-0b76245b1b6a"]
+      }
+    },
+    {
+      "model": "mainapp.courses",
+      "pk": "193a7823-e1f2-4c03-bc64-5ea318a31a1a",
+      "fields": {
+        "name": "Medic",
+        "number": 2,
+        "student": ["0e36d72d-e364-4c74-af84-e7b017abcdfa", "5718290c-c5fa-42d4-b945-0b76245b1b6a"]
+      }
+    },
+    {
+      "model": "mainapp.courses",
+      "pk": "dbf9aa21-a156-4bf2-92c2-ac0dd63a50d8",
+      "fields": {
+        "name": "Philosofe",
+        "number": 3,
+        "student": ["0e36d72d-e364-4c74-af84-e7b017abcdfa", "5718290c-c5fa-42d4-b945-0b76245b1b6a"]
+      }
+    },
+    {
+      "model": "mainapp.courses",
+      "pk": "5718290c-c5fa-42d4-b945-0b76245b1b6a",
+      "fields": {
+        "name": "Information",
+        "number": 4,
+        "student": ["0e36d72d-e364-4c74-af84-e7b017abcdfa", "5718290c-c5fa-42d4-b945-0b76245b1b6a"]
+      }
+    }
+]
