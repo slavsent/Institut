@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Курсы
+Семестры
 {% endblock title %}
 
 {% block content %}
@@ -20,7 +20,7 @@
     {% for item in object_list %}
     <div class="card my-2">
       <div class="card-body">
-        <h5 class="card-title">Name: {{ item.name }} Number: {{ item.number }} </h5>
+        <h5 class="card-title">Number: {{ item.number }} </h5>
         <p class="card-text">
 
         </p>
@@ -51,36 +51,11 @@
   </div>
 
   <div class="col-lg-4">
-      <div class="card my-2 sticky-top">
-      <div class="card-header">
-        Filter
 
-      </div>
-
-      <div class="card-body">
-        <form action="">
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">Name</span>
-            </div>
-            <input type="text" class="form-control" name="filter_name">
-          </div>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">Number</span>
-            </div>
-            <input type="number" class="form-control" name="filter_number">
-          </div>
-
-          <button type="submit"
-            class="btn btn-primary btn-block">Make filter</button>
-        </form>
-      </div>
-    </div>
 
 
     <a class="btn btn-primary btn-block" role="button"
-      href="{% url 'mainapp:students_create' %}">Добавить курс</a>
+      href="{% url 'mainapp:students_create' %}">Добавить семестр</a>
 
 
   </div>

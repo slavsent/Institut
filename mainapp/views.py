@@ -114,12 +114,44 @@ class CardStudentListView(ListView):
         return super().get_queryset().filter(deleted=False)
 
 
+class CardStudentDetailView(DetailView):
+    model = mainapp_models.CardStudent
+
+
+class CardStudentDeleteView(DeleteView):
+    model = mainapp_models.CardStudent
+    success_url = reverse_lazy("mainapp:cardstudents")
+
+
 class CoursesListView(ListView):
     model = mainapp_models.Courses
     paginate_by = 5
 
     def get_queryset(self):
-        return super().get_queryset().filter(deleted=False)
+        filter_name = self.request.GET.get('filter_name')
+        filter_number = self.request.GET.get('filter_number')
+
+        if filter_name and filter_number:
+            return super().get_queryset().filter(firstname__icontains=filter_name,
+                                                 number=filter_number,
+                                                 deleted=False)
+        elif filter_name:
+            return super().get_queryset().filter(firstname__icontains=filter_name, deleted=False)
+        elif filter_number:
+
+            return super().get_queryset().filter(number=filter_number, deleted=False)
+        else:
+
+            return super().get_queryset().filter(deleted=False)
+
+
+class CoursesDetailView(DetailView):
+    model = mainapp_models.Courses
+
+
+class CoursesDeleteView(DeleteView):
+    model = mainapp_models.Courses
+    success_url = reverse_lazy("mainapp:courses")
 
 
 class TermsListView(ListView):
@@ -136,10 +168,6 @@ class TermCoursesListView(ListView):
 
     def get_queryset(self):
         return super().get_queryset().filter(deleted=False)
-
-
-class CoursesDetailView(TemplateView):
-    template_name = "mainapp/courses_detail.html"
 
 
 class ContactsPageView(TemplateView):

@@ -24,7 +24,7 @@
         <p class="card-text"></p>
         <div class="row">
           <div class="col">
-            <a href="{% url 'mainapp:teachers_detail' pk=item.pk %}"
+            <a href="{% url 'mainapp:cardstudents_detail' pk=item.pk %}"
               class="card-link">Подробнее</a>
           </div>
 
@@ -36,7 +36,7 @@
 
 
           <div class="col-1 text-center">
-            <a href="{% url 'mainapp:teachers_delete' pk=item.pk %}">
+            <a href="{% url 'mainapp:cardstudents_delete' pk=item.pk %}">
               <i class="far fa-trash-alt"></i>
             </a>
           </div>
