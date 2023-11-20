@@ -1,0 +1,82 @@
+[
+    {
+      "model": "mainapp.student",
+      "pk": "0e36d72d-e364-4c74-af84-e7b017abcdfa",
+      "fields": {
+        "firstname": "Ryan",
+        "surname": "Ivanov",
+      }
+    },
+    {
+      "model": "mainapp.student",
+      "pk": "193a7823-e1f2-4c03-bc64-5ea318a31a1a",
+      "fields": {
+        "firstname": "Guy",
+        "surname": "Sidorov",
+      }
+    },
+    {
+      "model": "mainapp.student",
+      "pk": "dbf9aa21-a156-4bf2-92c2-ac0dd63a50d8",
+      "fields": {
+        "firstname": "Aaron",
+        "surname": "Pupkin",
+      }
+    },
+    {
+      "model": "mainapp.student",
+      "pk": "5718290c-c5fa-42d4-b945-0b76245b1b6a",
+      "fields": {
+        "firstname": "Ashley",
+        "surname": "Krasnov",
+      }
+    },
+    {
+      "model": "mainapp.student",
+      "pk": "df85c15b-8d87-40d6-a071-3250cb1b25ef",
+      "fields": {
+        "firstname": "Daniel",
+        "surname": "Petrov",
+      }
+    },
+    {
+      "model": "mainapp.student",
+      "pk": "e91f2a74-a2c1-427c-b108-a5129f0b587d",
+      "fields": {
+        "firstname": "Daniel",
+        "surname": "Samoylov",
+      }
+    },
+    {
+      "model": "mainapp.student",
+      "pk": "142f25f3-8813-48c8-8c28-506dc71adb83",
+      "fields": {
+        "firstname": "Carla",
+        "surname": "Alekseev",
+      }
+    },
+    {
+      "model": "mainapp.student",
+      "pk": "d86bade3-bd2c-4078-8494-ba9e715e1871",
+      "fields": {
+        "firstname": "Timothy",
+        "surname": "Ivleev",
+      }
+    },
+    {
+      "model": "mainapp.student",
+      "pk": "d687e07f-cd8c-4e86-9d3d-230de903abdb",
+      "fields": {
+        "firstname": "Brandon",
+        "surname": "Bigov",
+      }
+    },
+    {
+      "model": "mainapp.student",
+      "pk": "baf85ed8-8dd7-48c2-ac12-6279d6d86121",
+      "fields": {
+        "firstname": "Richard",
+        "surname": "Ykovlev",
+      }
+    }
+]

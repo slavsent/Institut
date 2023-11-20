@@ -1,0 +1,82 @@
+[
+    {
+      "model": "mainapp.cardstudent",
+      "fields": {
+        "student_id": "0e36d72d-e364-4c74-af84-e7b017abcdfa",
+        "id_student": "000001",
+        "name": "FEO"
+      }
+    },
+    {
+      "model": "mainapp.cardstudent",
+      "fields": {
+        "student_id": "193a7823-e1f2-4c03-bc64-5ea318a31a1a",
+        "id_student": "000002",
+        "name": "FEO"
+      }
+    },
+    {
+      "model": "mainapp.cardstudent",
+      "fields": {
+        "student_id": "dbf9aa21-a156-4bf2-92c2-ac0dd63a50d8",
+        "id_student": "000003",
+        "name": "FEO"
+      }
+    },
+    {
+      "model": "mainapp.cardstudent",
+      "fields": {
+        "student_id": "5718290c-c5fa-42d4-b945-0b76245b1b6a",
+        "id_student": "000004",
+        "name": "FEO"
+      }
+    },
+    {
+      "model": "mainapp.cardstudent",
+      "fields": {
+        "student_id": "df85c15b-8d87-40d6-a071-3250cb1b25ef",
+        "id_student": "000005",
+        "name": "FEO"
+      }
+    },
+    {
+      "model": "mainapp.cardstudent",
+      "fields": {
+        "student_id": "e91f2a74-a2c1-427c-b108-a5129f0b587d",
+        "id_student": "000006",
+        "name": "ISU"
+      }
+    },
+    {
+      "model": "mainapp.cardstudent",
+      "fields": {
+        "student_id": "142f25f3-8813-48c8-8c28-506dc71adb83",
+        "id_student": "000007",
+        "name": "ISU"
+      }
+    },
+    {
+      "model": "mainapp.cardstudent",
+      "fields": {
+        "student_id": "d86bade3-bd2c-4078-8494-ba9e715e1871",
+        "id_student": "000008",
+        "name": "ISU"
+      }
+    },
+    {
+      "model": "mainapp.cardstudent",
+      "fields": {
+        "student_id": "d687e07f-cd8c-4e86-9d3d-230de903abdb",
+        "id_student": "000009",
+        "name": "ISU"
+      }
+    },
+    {
+      "model": "mainapp.cardstudent",
+      "fields": {
+        "student_id": "baf85ed8-8dd7-48c2-ac12-6279d6d86121",
+        "id_student": "000010",
+        "name": "ISU"
+      }
+    }
+]

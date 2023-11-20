@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ object.firstname|default:"Преподаватель" }}
+{% endblock title %}
+
+{% block content %}
+<div class="row justify-content-center pt-3">
+  <div class="col-md-12 col-lg-8">
+    <div class="card shadow">
+      <div class="card-body">
+        <h5 class="card-title">{{ object.firstname }}</h5>
+        <p class="card-text">
+          {{ object.surname }}
+          Звание - {{ object.title }}
+        </p>
+        <a href="{% url 'mainapp:students' %}" class="btn btn-primary">Назад</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
