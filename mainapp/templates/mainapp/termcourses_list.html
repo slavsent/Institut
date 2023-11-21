@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Семестры
+Семестры курсов
 {% endblock title %}
 
 {% block content %}
@@ -20,13 +20,13 @@
     {% for item in object_list %}
     <div class="card my-2">
       <div class="card-body">
-        <h5 class="card-title">Number: {{ item.number }} </h5>
+        <h5 class="card-title">Term: {{ item.term.number }} </h5>
         <p class="card-text">
-          Teacher: {{ item.teacher.firstname }} {{ item.teacher.surname }}
+          Course: {{ item.course.name }}
         </p>
         <div class="row">
           <div class="col">
-            <a href="{% url 'mainapp:terms_detail' pk=item.pk %}"
+            <a href="{% url 'mainapp:termcourses_detail' pk=item.pk %}"
               class="card-link">Подробнее</a>
           </div>
 
@@ -38,7 +38,7 @@
 
 
           <div class="col-1 text-center">
-            <a href="{% url 'mainapp:terms_delete' pk=item.pk %}">
+            <a href="{% url 'mainapp:termcourses_delete' pk=item.pk %}">
               <i class="far fa-trash-alt"></i>
             </a>
           </div>
@@ -55,7 +55,7 @@
 
 
     <a class="btn btn-primary btn-block" role="button"
-      href="{% url 'mainapp:students_create' %}">Добавить семестр</a>
+      href="{% url 'mainapp:students_create' %}">Добавить семестр курса</a>
 
 
   </div>

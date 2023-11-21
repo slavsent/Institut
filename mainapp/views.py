@@ -4,6 +4,7 @@ from django.urls import reverse_lazy
 from django.views.generic import CreateView, DeleteView, DetailView, ListView, TemplateView, UpdateView
 
 from mainapp import models as mainapp_models
+from mainapp import forms as mainapp_forms
 
 
 class MainPageView(TemplateView):
@@ -118,6 +119,12 @@ class CardStudentDetailView(DetailView):
     model = mainapp_models.CardStudent
 
 
+class CardStudentUpdateView(UpdateView):
+    model = mainapp_models.CardStudent
+    form_class = mainapp_forms.EditCardStudentForm
+    success_url = reverse_lazy("mainapp:cardstudents")
+
+
 class CardStudentDeleteView(DeleteView):
     model = mainapp_models.CardStudent
     success_url = reverse_lazy("mainapp:cardstudents")
@@ -159,7 +166,16 @@ class TermsListView(ListView):
     paginate_by = 5
 
     def get_queryset(self):
-        return super().get_queryset().filter(deleted=False)
+        return super().get_queryset().filter(deleted=False).order_by("number")
+
+
+class TermsDetailView(DetailView):
+    model = mainapp_models.Terms
+
+
+class TermsDeleteView(DeleteView):
+    model = mainapp_models.Terms
+    success_url = reverse_lazy("mainapp:terms")
 
 
 class TermCoursesListView(ListView):
@@ -167,7 +183,16 @@ class TermCoursesListView(ListView):
     paginate_by = 5
 
     def get_queryset(self):
-        return super().get_queryset().filter(deleted=False)
+        return super().get_queryset().filter(deleted=False).order_by("date_begin")
+
+
+class TermCoursesDetailView(DetailView):
+    model = mainapp_models.TermCourses
+
+
+class TermCoursesDeleteView(DeleteView):
+    model = mainapp_models.TermCourses
+    success_url = reverse_lazy("mainapp:terms")
 
 
 class ContactsPageView(TemplateView):

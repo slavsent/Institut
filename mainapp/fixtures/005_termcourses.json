@@ -1,0 +1,52 @@
+[
+    {
+      "model": "mainapp.termcourses",
+      "pk": "0e36d72d-e364-4c74-af84-e7b017abcdfa",
+      "fields": {
+        "term": "0e36d72d-e364-4c74-af84-e7b017abcdfa",
+        "course": "0e36d72d-e364-4c74-af84-e7b017abcdfa",
+        "date_begin": "2023-11-14 15:43:32.249588",
+        "date_end": "2023-11-14 15:43:32.249588"
+      }
+    },
+    {
+      "model": "mainapp.termcourses",
+      "pk": "193a7823-e1f2-4c03-bc64-5ea318a31a1a",
+      "fields": {
+        "term": "0e36d72d-e364-4c74-af84-e7b017abcdfa",
+        "course": "0e36d72d-e364-4c74-af84-e7b017abcdfa",
+        "date_begin": "2023-11-14 15:43:32.249588",
+        "date_end": "2023-11-14 15:43:32.249588"
+      }
+    },
+    {
+      "model": "mainapp.termcourses",
+      "pk": "dbf9aa21-a156-4bf2-92c2-ac0dd63a50d8",
+      "fields": {
+        "term": "193a7823-e1f2-4c03-bc64-5ea318a31a1a",
+        "course": "dbf9aa21-a156-4bf2-92c2-ac0dd63a50d8",
+        "date_begin": "2023-11-14 15:43:32.249588",
+        "date_end": "2023-11-14 15:43:32.249588"
+      }
+    },
+    {
+      "model": "mainapp.termcourses",
+      "pk": "046f42bd-ebd6-41ac-9068-450d1870a55b",
+      "fields": {
+        "term": "193a7823-e1f2-4c03-bc64-5ea318a31a1a",
+        "course": "dbf9aa21-a156-4bf2-92c2-ac0dd63a50d8",
+        "date_begin": "2023-11-14 15:43:32.249588",
+        "date_end": "2023-11-14 15:43:32.249588"
+      }
+    },
+    {
+      "model": "mainapp.termcourses",
+      "pk": "5718290c-c5fa-42d4-b945-0b76245b1b6a",
+      "fields": {
+        "term": "5718290c-c5fa-42d4-b945-0b76245b1b6a",
+        "course": "142f25f3-8813-48c8-8c28-506dc71adb83",
+        "date_begin": "2023-11-14 15:43:32.249588",
+        "date_end": "2023-11-14 15:43:32.249588"
+      }
+    }
+]

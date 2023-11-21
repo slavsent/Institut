@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ object.number|default:"Семестр" }}
+{% endblock title %}
+
+{% block content %}
+<div class="row justify-content-center pt-3">
+  <div class="col-md-12 col-lg-8">
+    <div class="card shadow">
+      <div class="card-body">
+        <h5 class="card-title">{{ object.number }}</h5>
+        <p class="card-text">
+          Teacher: {{ object.teacher.firstname }} {{ object.teacher.surname }}
+
+        </p>
+        <a href="{% url 'mainapp:terms' %}" class="btn btn-primary">Назад</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
