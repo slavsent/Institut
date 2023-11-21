@@ -1,0 +1,42 @@
+[
+    {
+      "model": "mainapp.terms",
+      "pk": "0e36d72d-e364-4c74-af84-e7b017abcdfa",
+      "fields": {
+        "number": 1,
+        "teacher": "1c9ae8a0-783a-4b8a-a924-a80251c94d86"
+      }
+    },
+    {
+      "model": "mainapp.terms",
+      "pk": "193a7823-e1f2-4c03-bc64-5ea318a31a1a",
+      "fields": {
+        "number": 2,
+        "teacher": "e8b2660c-fa36-4ceb-92d6-90eb764c322f"
+      }
+    },
+    {
+      "model": "mainapp.terms",
+      "pk": "dbf9aa21-a156-4bf2-92c2-ac0dd63a50d8",
+      "fields": {
+        "number": 3,
+        "teacher": "e8b2660c-fa36-4ceb-92d6-90eb764c322f"
+      }
+    },
+    {
+      "model": "mainapp.terms",
+      "pk": "046f42bd-ebd6-41ac-9068-450d1870a55b",
+      "fields": {
+        "number": 1,
+        "teacher": "e8b2660c-fa36-4ceb-92d6-90eb764c322f"
+      }
+    },
+    {
+      "model": "mainapp.terms",
+      "pk": "5718290c-c5fa-42d4-b945-0b76245b1b6a",
+      "fields": {
+        "number": 4,
+        "teacher": "1c9ae8a0-783a-4b8a-a924-a80251c94d86"
+      }
+    }
+]

@@ -1,0 +1,16 @@
+<{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="row justify-content-center pt-3">
+  <div class="col-md-12 col-lg-8">
+    <h5 class="card-title">Student: {{ object.student.firstname }} {{ object.student.surname }}</h5>
+    <form method="post">
+      {% csrf_token %}
+      {{ form|crispy }}
+      <button type="submit"
+        class="btn btn-primary btn-block">Сохранить</button>
+    </form>
+  </div>
+</div>
+{% endblock content %}
